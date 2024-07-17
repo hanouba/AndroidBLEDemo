@@ -8,9 +8,7 @@ class EncodeUtil {
                 return ""
             }
             val stringBuilder = StringBuilder("")
-            if (src.isEmpty()) {
-                return null
-            }
+
             for (i in src.indices) {
                 val v = src[i].toInt() and 0xFF
                 val hex = Integer.toHexString(v)
